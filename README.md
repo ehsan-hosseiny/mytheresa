@@ -6,6 +6,13 @@
 ### To run table migration, Should be call inside docker container
 `sudo docker exec -it mytheresa_php_1 sh`
 
+Copy .env.example to make .env with below database configure
+- DB_CONNECTION=mysql
+- DB_HOST=database
+- DB_PORT=3306
+- DB_DATABASE=mytheresa_db
+- DB_USERNAME=root
+- DB_PASSWORD=root
 then run below command
 
 `php artisan migrate --seed`
